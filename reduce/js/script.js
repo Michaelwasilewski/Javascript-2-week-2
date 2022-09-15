@@ -40,19 +40,19 @@ const products = [
     { title: 'Egg', inStock: true, quantity: 12, price: 5 },
   ];
 
-//   const totalCost = products.reduce((total, currentProduct)=> {
-//     if (currentProduct.inStock === true) {
-//         total += currentProduct.price * currentProduct.quantity;
-//     }
-//     return total;
-//   },0 )
+  const totalCost = products.reduce((total, currentProduct)=> {
+    if (currentProduct.inStock === true) {
+        total += currentProduct.price * currentProduct.quantity;
+    }
+    return total;
+  },0 )
 
-//   console.log(totalCost);¨
+  console.log(totalCost);
 
-const totalCost = products.reduce(
-    (total, currentProduct) =>
-    inStock ? (total += currentProduct.price * currentProduct.quantity) : total,
-    0,
-);
-console.log(totalCost)
+// const totalCost = products.reduce(
+//     (total, currentProduct) =>
+//     inStock ? (total += currentProduct.price * currentProduct.quantity) : total,
+//     0,
+// );
+// console.log(totalCost);
 
